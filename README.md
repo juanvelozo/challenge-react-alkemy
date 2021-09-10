@@ -10,4 +10,4 @@ Este proyecto es parte de un challenge de React hecho por Alkemy para evaluar ta
 
 ### `npm run build`=> Builds the app for production to the `build` folder.
 
-## Objetivos
+
