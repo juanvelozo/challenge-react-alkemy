@@ -1,12 +1,12 @@
 import React from 'react';
 
 function SearchResultItem({data}) {
-  return (
-    <div className="card m-3 grid" style={{width: '20rem'}}>
+  return (  
+  <div className="card " style={{width: '20rem' }}>
       <img src={data.image.url} alt="pic" className="card-img-top"/>
-      <div className="card-body p-2">
-        <p className="card-title">{data.name}</p>
-        <div>
+      <div className="card-body relative">
+        <h2 className="font-weight-bolder text-center absolute">{data.name}</h2>
+        {/* <div>
           <p>Name: {data.biography['full-name']}</p>
           <p>Weight: {data.appearance.weight[1]}</p>
           <p>Height: {data.appearance.height[1]}</p>
@@ -17,10 +17,10 @@ function SearchResultItem({data}) {
               (
                 alias => 
                 <li key={alias}>{alias}</li>
-              )
-            }
+                )
+              }
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ function SearchResults({superheroData = []} ) {
 
   console.log(superheroData);
   return (
-    <div>
+    <div className="card-columns container">
       {superheroData.map(superhero =>
         <SearchResultItem data={superhero} key={superhero.id}/>
       )}

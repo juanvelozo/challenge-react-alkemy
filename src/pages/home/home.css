@@ -1,0 +1,44 @@
+h1 {
+	font-size: 360%;
+	color: white;
+	text-shadow: 2px 3px 5px black;
+	margin: 2rem 0;
+	text-align: center;
+}
+h3 {
+	font-size: 160%;
+	font-weight: 500;
+	line-height: 1.2;
+	margin: 2rem 0;
+}
+.button{
+	font-size: 130%;
+}
+
+@media (max-width: 768px) {
+	h1 {
+		font-size: 250%;
+		margin: 0;
+	}
+	h3 {
+		font-size: 150%;
+	}
+	.btn-default {
+		font-size: 120%;
+	}
+}
+@media (max-width: 650px) {
+	h3 {
+		display: none;
+	}
+	.button{
+		font-size: 100%;
+	}
+}
+@media (max-width: 320px) {
+	h1 {
+		font-size: 250%;
+		margin: 1rem 0;
+		text-shadow: 2px 3px 4px black;
+	}
+}

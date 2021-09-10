@@ -1,12 +1,14 @@
-import React from 'react';
+import React from 'react'
+import { BackButton } from '../BackButton/BackButton'
+import { LogoutButton } from '../Logout/LogoutButton'
 
-function Navbar(props) {
-  return (
-    <div className="nav">
-      <span className="text-uppercase">Superhero Alkemy App</span>
-      <hr/>
-    </div>
-  );
+export const Navbar = () => {
+    return (
+        <>
+            <nav className="p-3"> 
+                <BackButton/>
+                <LogoutButton/> 
+            </nav>
+        </>
+    )
 }
-
-export default Navbar;
