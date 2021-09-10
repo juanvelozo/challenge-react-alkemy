@@ -1,14 +1,15 @@
-import React from 'react';
-import SearchResultItem from './SearchResultItem';
+import React from "react";
+import SearchResultItem from "./SearchResultItem";
 
-function SearchResults({superheroData = []} ) {
-
+function SearchResults({ superheroData = [] }) {
   console.log(superheroData);
   return (
-    <div className="card-columns container">
-      {superheroData.map(superhero =>
-        <SearchResultItem data={superhero} key={superhero.id}/>
-      )}
+    <div className="card-columns container-fluid">
+      <div className="">
+        {superheroData.map((superhero) => (
+          <SearchResultItem data={superhero} key={superhero.id} />
+        ))}
+      </div>
     </div>
   );
 }
